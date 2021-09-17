@@ -69,6 +69,65 @@ for letter in name:
     print(letter)
 print()
 
+
+
+
 print(cities)
+
+print(cities[0], cities[2], cities[-1], cities[-3])
+
+print(cities[0:3])
+print(cities[3:7])
+# L[start:stop]
+# L[:stop]  # start is 0
+# L[start:] # end is len(L)
+# L[start:stop:step]
+print(cities[:3])
+print(cities[8:])
+print(cities[-4:])
+
+# slice works on list, tuple, str, bytes
+
+actor = "Chris Hemsworth"
+print(actor[:5])
+print(actor[6:9])
+print(actor[-5:])
+
+s = "abcdefghijklmnopqrstuvwxyz"
+print(s)
+print(s[5:12])
+print(s[5:12:2])
+print(s[::2])
+print(s[1::2])
+
+for city in cities:
+    print(city.upper())
+
+# for VAR ... in ITERABLE:
+#     ...
+#     ...
+
+print(len(cities), min(cities), max(cities))
+print(sorted(cities))
+print(min("applesauce"), max("applesauce"))
+
+data = [5, 8, 4.3, 27.6, -100]
+print(sum(data))
+print(min("apricotApple"))
+
+print(cities, '\n')
+rc = reversed(cities)
+print(rc)
+for city in rc:
+    print(city.upper())
+print()
+
+# for VAR in ITERABLE:
+for i, city in enumerate(cities):
+    if i % 2 == 0:
+        print(i, city)
+print()
+ec = enumerate(cities)
+print(ec, list(ec))
 
 
